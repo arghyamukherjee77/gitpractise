@@ -1,0 +1,2275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE focus-model [
+]>
+<!--Model Created from Reqode--><focus-model auxDataFilesFolder="" classifyAttributesEnabled="false" frea_ai_smart_comment="" inputOutput="false" manual="true">
+    <model-identification modelTag="@TEST @1.0 @TEST_TEST @GenAI_generated">
+        <model-identification-field name="Application Name" partOfTag="true" value="TEST"/>
+        <model-identification-field name="Application code version #" partOfTag="true" value="1.0"/>
+        <model-identification-field name="Application Function" partOfTag="true" value="TEST_TEST"/>
+        <model-identification-field name="Updated Reason" partOfTag="false" value="New Model"/>
+        <model-identification-field name="Created By" partOfTag="false" value="rgtmp_arghya.mukherjee"/>
+        <model-identification-field name="Created Date and Time" partOfTag="false" value="01 Jun 2026 09:56:30"/>
+        <model-identification-field name="Updated By" partOfTag="false" value="arghya.mukherjee"/>
+        <model-identification-field name="Updated Date and Time" partOfTag="false" value="02 Jun 2026 10:32:56"/>
+        <model-identification-field name="Application Sub Function" partOfTag="true" value="GenAI_generated"/>
+        <model-identification-field name="Test Stage" partOfTag="false" value=""/>
+        <model-identification-field name="Criticality" partOfTag="false" value=""/>
+        <model-identification-field name="Project" partOfTag="false" value=""/>
+        <model-identification-field name="Epic" partOfTag="false" value=""/>
+        <model-identification-field name="Feature" partOfTag="false" value=""/>
+        <model-identification-field name="User Story" partOfTag="false" value=""/>
+        <model-identification-field name="Git Comments" partOfTag="false" value=""/>
+        <model-identification-field name="Use attribute pool" partOfTag="false" value="true"/>
+    </model-identification>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="user_account_status" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="exist" neg-value="false" weight="1"/>
+        <value name="notexist" neg-value="false" weight="1"/>
+        <requirement ID="sample_user_story_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="username" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="valid" neg-value="false" weight="1"/>
+        <value name="invalid" neg-value="true" weight="1"/>
+        <requirement ID="sample_user_story_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="password" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="valid" neg-value="false" weight="1"/>
+        <value name="invalid" neg-value="true" weight="1"/>
+        <requirement ID="sample_user_story_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="login_status" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="success" neg-value="false" weight="1"/>
+        <value name="failure" neg-value="true" weight="1"/>
+        <requirement ID="sample_user_story_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="order_status" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="placed" neg-value="false" weight="1"/>
+        <value name="notplaced" neg-value="true" weight="1"/>
+        <requirement ID="sample_user_story_2"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="order_tracking_details" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="displayed" neg-value="false" weight="1"/>
+        <value name="notdisplayed" neg-value="true" weight="1"/>
+        <requirement ID="sample_user_story_2"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="upi_app_status" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="installed" neg-value="false" weight="1"/>
+        <value name="notinstalled" neg-value="true" weight="1"/>
+        <requirement ID="sample_user_story_3"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="upi_id" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="valid" neg-value="false" weight="1"/>
+        <value name="invalid" neg-value="true" weight="1"/>
+        <requirement ID="sample_user_story_3"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="payment_status" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="success" neg-value="false" weight="1"/>
+        <value name="failure" neg-value="true" weight="1"/>
+        <requirement ID="sample_user_story_3"/>
+    </attribute>
+    <negative-combination>
+        <attr-value attribute="order_status" value="notplaced"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="upi_app_status" value="notinstalled"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="password" value="invalid"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="order_tracking_details" value="notdisplayed"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="payment_status" value="failure"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="upi_id" value="invalid"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="username" value="invalid"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="login_status" value="failure"/>
+    </negative-combination>
+    <requirements-collection>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="sample_user_story_3" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="sample_user_story_1" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="sample_user_story_2" Restrictions=""/>
+    </requirements-collection>
+    <coverage-reqs-sets defaultCoverageRequirementsSet="default">
+        <coverage-reqs-set description="" name="default">
+            <coverage-req>
+                <attribute name="user_account_status"/>
+                <attribute name="username"/>
+                <attribute name="password"/>
+                <attribute name="login_status"/>
+                <attribute name="order_status"/>
+                <attribute name="order_tracking_details"/>
+                <attribute name="upi_app_status"/>
+                <attribute name="upi_id"/>
+                <attribute name="payment_status"/>
+                <coverage-goal coverage-goal-val="1"/>
+            </coverage-req>
+        </coverage-reqs-set>
+    </coverage-reqs-sets>
+    <neg-coverage-reqs-sets defaultCoverageRequirementsSet="SingleNegativeCoverageRequirementsSet" isAutoNegCoverageRequirements="true">
+        <coverage-reqs-set description="" name="SingleNegativeCoverageRequirementsSet">
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="order_status"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="upi_app_status"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="password"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="order_tracking_details"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="payment_status"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="upi_id"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="username"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="login_status"/>
+                </negative-attribute-combination>
+            </coverage-req>
+        </coverage-reqs-set>
+    </neg-coverage-reqs-sets>
+    <focus-ctd-decoration decorationName="DefaultTestCaseNameDecoration" decorationType="testCaseName" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultFreeStyleDecoration" decorationType="freeStyle" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultCucumberDecoration" decorationType="cucumberDecoration" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultStructuredDecoration" decorationType="structuredDecoration" isActiveDecoration="true">
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-1" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC1"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-1" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_1"/>
+            <requirement ID="sample_user_story_2"/>
+            <requirement ID="sample_user_story_3"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Successful Login, Order Tracking, and UPI Payment"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-1" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Verify that a user can successfully log in, track an order, and complete a UPI payment."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-1" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="User account exists.&#10;UPI app is installed on the device.&#10;Order is placed successfully."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-1" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Valid username&#10;Valid password&#10;Valid UPI ID&#10;Order details (placed successfully)"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-1" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="The user opens the app."/>
+                    <focus-ctd-template text="The user enters valid username and password."/>
+                    <focus-ctd-template text="The user clicks on the Login button."/>
+                    <focus-ctd-template text="The user navigates to the Orders section."/>
+                    <focus-ctd-template text="The user selects the order to track."/>
+                    <focus-ctd-template text="The user selects UPI as the payment method."/>
+                    <focus-ctd-template text="The user enters a valid UPI ID."/>
+                    <focus-ctd-template text="The user confirms the UPI payment."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The app is launched and the login screen is displayed."/>
+                    <focus-ctd-template text="The username and password fields are populated with the entered values."/>
+                    <focus-ctd-template text="The user is redirected to the dashboard."/>
+                    <focus-ctd-template text="The Orders section is displayed with the list of orders."/>
+                    <focus-ctd-template text="The order tracking details are displayed."/>
+                    <focus-ctd-template text="The UPI payment option is displayed and selected."/>
+                    <focus-ctd-template text="The UPI ID is accepted for payment and a confirmation prompt is displayed."/>
+                    <focus-ctd-template text="The payment is completed successfully, and a confirmation message is displayed."/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-2" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC2"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-2" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_2"/>
+            <requirement ID="sample_user_story_3"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Validate Order Tracking with UPI Payment for Non-Existent User"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-2" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Validate that a user can track order status and complete UPI payment successfully."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-2" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="User account exists.&#10;Order is placed successfully.&#10;UPI app is installed on the device."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-2" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Username: valid_username&#10;Password: valid_password&#10;UPI ID: valid_upi_id&#10;Order ID: placed_order_id"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-2" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="The user logs in with valid credentials."/>
+                    <focus-ctd-template text="The user navigates to the Orders section."/>
+                    <focus-ctd-template text="The user selects the order for which they want to track the status."/>
+                    <focus-ctd-template text="The user views the order tracking details."/>
+                    <focus-ctd-template text="The user selects UPI as the payment method."/>
+                    <focus-ctd-template text="The user enters a valid UPI ID."/>
+                    <focus-ctd-template text="The user confirms the UPI payment."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The user is logged in successfully and redirected to the dashboard."/>
+                    <focus-ctd-template text="The list of orders is displayed."/>
+                    <focus-ctd-template text="The order details page is displayed."/>
+                    <focus-ctd-template text="The order tracking details are displayed."/>
+                    <focus-ctd-template text="The UPI payment page is displayed."/>
+                    <focus-ctd-template text="The UPI app is opened for payment confirmation."/>
+                    <focus-ctd-template text="The payment is completed successfully, and a success message is displayed."/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-3" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC3"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-3" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_1"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Invalid Login Attempt with Non-Existent User Account"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-3" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Test that the system handles a login attempt with a valid username format but for a non-existent user account and invalid password."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-3" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="The user is not logged in.&#10;The application is accessible."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-3" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Username: testuser123 (valid format but non-existent account)&#10;Password: wrongpassword (invalid password)"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-3" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="The user opens the application."/>
+                    <focus-ctd-template text="The user enters a valid username format but for a non-existent account."/>
+                    <focus-ctd-template text="The user enters an invalid password."/>
+                    <focus-ctd-template text="The user clicks on the Login button."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The login page is displayed."/>
+                    <focus-ctd-template text="The username is accepted as input."/>
+                    <focus-ctd-template text="The password is accepted as input."/>
+                    <focus-ctd-template text="The system displays an error message indicating &quot;Invalid username or password&quot;."/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-4" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC4"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-4" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_3"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Validate UPI Payment with Invalid UPI ID"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-4" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Test the UPI payment process with an invalid UPI ID to verify the system's error handling."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-4" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="User account exists.&#10;User is logged in successfully.&#10;Order is placed successfully.&#10;UPI app is installed on the device."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-4" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Invalid UPI ID (e.g., &quot;invalid@upi&quot;)"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-4" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="The user navigates to the payment section and selects UPI as the payment method."/>
+                    <focus-ctd-template text="The user enters an invalid UPI ID."/>
+                    <focus-ctd-template text="The user confirms the payment."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The system displays a screen to enter UPI details."/>
+                    <focus-ctd-template text="The system shows an error message indicating that the UPI ID is invalid."/>
+                    <focus-ctd-template text="The system displays a message prompting the user to check and re-enter the UPI ID."/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-5" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC5"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="notinstalled"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-5" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_3"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Negative UPI Payment Due to Missing UPI App"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="notinstalled"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-5" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Test that the system handles UPI payment failure when the UPI app is not installed."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="notinstalled"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-5" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="User account exists.&#10;User is logged in.&#10;Order is placed."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="notinstalled"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-5" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="UPI ID: valid UPI ID (e.g., user@upi)"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="notinstalled"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-5" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="The user navigates to the payment section."/>
+                    <focus-ctd-template text="The user selects UPI as the payment method."/>
+                    <focus-ctd-template text="The user enters a valid UPI ID."/>
+                    <focus-ctd-template text="The user confirms the payment."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The system displays the available payment methods, including UPI."/>
+                    <focus-ctd-template text="The system prompts the user to install the UPI app."/>
+                    <focus-ctd-template text="The system displays an error message indicating that the UPI app is not installed."/>
+                    <focus-ctd-template text="The payment is not processed due to the missing UPI app."/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="notinstalled"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-6" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC6"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="notdisplayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-6" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_1"/>
+            <requirement ID="sample_user_story_2"/>
+            <requirement ID="sample_user_story_3"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Unsuccessful UPI Payment with Valid Credentials and Non-Displayed Order Tracking Details"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="notdisplayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-6" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Verify that a user with valid credentials and a placed order cannot proceed with UPI payment when order tracking details are not displayed."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="notdisplayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-6" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="User account exists.&#10;Order is placed successfully but order tracking details are not displayed.&#10;UPI app is installed on the device."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="notdisplayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-6" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Valid username&#10;Valid password&#10;Valid UPI ID"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="notdisplayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-6" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="The user opens the application."/>
+                    <focus-ctd-template text="The user enters valid username and password."/>
+                    <focus-ctd-template text="The user clicks on the Login button."/>
+                    <focus-ctd-template text="The user navigates to the Orders section."/>
+                    <focus-ctd-template text="The user selects the order to track."/>
+                    <focus-ctd-template text="The user attempts to proceed with UPI payment."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The application login page is displayed."/>
+                    <focus-ctd-template text="The user is redirected to the dashboard."/>
+                    <focus-ctd-template text="The dashboard is displayed with various options."/>
+                    <focus-ctd-template text="The list of orders is displayed."/>
+                    <focus-ctd-template text="An error message indicating that order tracking details are not available is displayed."/>
+                    <focus-ctd-template text="An error message indicating that payment cannot be processed due to unavailable order tracking details is displayed."/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="notdisplayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-7" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC7"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="notplaced"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-7" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_2"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Validate System Behavior for Displaying Order Tracking Details When No Order is Placed"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="notplaced"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-7" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Test the system's response when a user attempts to view order tracking details without having placed an order."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="notplaced"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-7" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="The user account exists and is active.&#10;The user is logged in with valid credentials.&#10;No orders have been placed by the user."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="notplaced"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-7" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Valid username and password."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="notplaced"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-7" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="The user navigates to the Orders section."/>
+                    <focus-ctd-template text="The user attempts to view order tracking details."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The Orders section is displayed, indicating that no orders are available."/>
+                    <focus-ctd-template text="The system displays a message indicating that no order tracking details are available or a similar notification."/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="notplaced"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-8" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC8"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-8" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_1"/>
+            <requirement ID="sample_user_story_2"/>
+            <requirement ID="sample_user_story_3"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Failed UPI Payment with Valid Credentials and Existing Order"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-8" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Test the system's behavior on failed UPI payment with valid credentials and existing order."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-8" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="User has an existing account.&#10;User has valid login credentials.&#10;User has an order placed.&#10;UPI app is installed."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-8" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Valid username: `testuser`&#10;Valid password: `testpassword`&#10;Existing order ID: `ORD12345`&#10;Valid UPI ID: `testupi@bank`"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-8" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="User logs in with valid username and password."/>
+                    <focus-ctd-template text="User navigates to the Orders section."/>
+                    <focus-ctd-template text="User selects the order to make a payment."/>
+                    <focus-ctd-template text="User views order tracking details."/>
+                    <focus-ctd-template text="User selects UPI as the payment method."/>
+                    <focus-ctd-template text="User enters a valid UPI ID."/>
+                    <focus-ctd-template text="User confirms the payment."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The system redirects the user to the dashboard."/>
+                    <focus-ctd-template text="The system displays a list of orders."/>
+                    <focus-ctd-template text="The system displays the order details."/>
+                    <focus-ctd-template text="The system displays the order tracking details."/>
+                    <focus-ctd-template text="The system initiates the UPI payment process."/>
+                    <focus-ctd-template text="The system validates the UPI ID and proceeds to payment."/>
+                    <focus-ctd-template text="The system displays a payment failure message."/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-9" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC9"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-9" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_1"/>
+            <requirement ID="sample_user_story_2"/>
+            <requirement ID="sample_user_story_3"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Validate User Login Failure with Valid Credentials and Track Order Status with UPI Payment"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-9" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Test the user flow from logging in with valid credentials but failing to login, then tracking order status, and completing a UPI payment successfully."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-9" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="User account exists.&#10;Order is placed successfully.&#10;UPI app is installed on the device."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-9" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Valid username&#10;Valid password&#10;Order ID of a placed order&#10;Valid UPI ID"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-9" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="The user opens the application."/>
+                    <focus-ctd-template text="The user enters valid username and valid password."/>
+                    <focus-ctd-template text="The user clicks on the Login button."/>
+                    <focus-ctd-template text="The user navigates to the Orders section."/>
+                    <focus-ctd-template text="The user selects the order for which the status is to be tracked."/>
+                    <focus-ctd-template text="The user views the order tracking details."/>
+                    <focus-ctd-template text="The user selects UPI as the payment method."/>
+                    <focus-ctd-template text="The user enters a valid UPI ID."/>
+                    <focus-ctd-template text="The user confirms the payment."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The application login page is displayed."/>
+                    <focus-ctd-template text="The username and password are accepted."/>
+                    <focus-ctd-template text="An error message indicating login failure is displayed."/>
+                    <focus-ctd-template text="The Orders section is not accessible due to login failure."/>
+                    <focus-ctd-template text="The order list is not displayed."/>
+                    <focus-ctd-template text="The order tracking details are not displayed."/>
+                    <focus-ctd-template text="The UPI payment page is not accessible."/>
+                    <focus-ctd-template text="The UPI ID is not processed."/>
+                    <focus-ctd-template text="An error message indicating payment failure due to login failure is displayed."/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="exist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="failure"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case id-10" negative="false" suppressNewLine="false" triggerType="TEST_CASE_ID">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="TC10"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="testcase-10" negative="false" suppressNewLine="false" triggerType="Test_Case_Name">
+            <requirement ID="sample_user_story_1"/>
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Invalid Login Attempt with Non-Existent Username"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test case description-10" negative="false" suppressNewLine="false" triggerType="Test_Case_Description">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Test that the system handles an invalid login attempt when the username is invalid and the user account does not exist."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="pre requisite-10" negative="false" suppressNewLine="false" triggerType="Preconditions">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="The application is installed and launched.&#10;The user has not logged in."/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test data-10" negative="false" suppressNewLine="false" triggerType="Test_Data">
+            <focus-ctd-single-template>
+                <focus-ctd-template text="Username: invalid&#10;Password: valid"/>
+            </focus-ctd-single-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+        <focus-ctd-trigger appliance="ALWAYS" is_or="false" name="test step-10" negative="false" suppressNewLine="false" triggerType="Test_Steps">
+            <focus-ctd-multiple-template>
+                <focus-ctd-multiple-template-testSteps>
+                    <focus-ctd-template text="The user opens the app."/>
+                    <focus-ctd-template text="The user enters an invalid username and a valid password."/>
+                    <focus-ctd-template text="The user clicks the Login button."/>
+                </focus-ctd-multiple-template-testSteps>
+                <focus-ctd-multiple-template-expectedResults>
+                    <focus-ctd-template text="The login screen is displayed."/>
+                    <focus-ctd-template text="The system validates the entered username and password and displays an error message."/>
+                    <focus-ctd-template text=""/>
+                </focus-ctd-multiple-template-expectedResults>
+                <focus-ctd-multiple-template-additionalInfo/>
+            </focus-ctd-multiple-template>
+            <focus-ctd-cond attribute="user_account_status" operation="Equals">
+                <focus-ctd-cond-val value="notexist"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="username" operation="Equals">
+                <focus-ctd-cond-val value="invalid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="password" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="login_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_status" operation="Equals">
+                <focus-ctd-cond-val value="placed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="order_tracking_details" operation="Equals">
+                <focus-ctd-cond-val value="displayed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_app_status" operation="Equals">
+                <focus-ctd-cond-val value="installed"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="upi_id" operation="Equals">
+                <focus-ctd-cond-val value="valid"/>
+            </focus-ctd-cond>
+            <focus-ctd-cond attribute="payment_status" operation="Equals">
+                <focus-ctd-cond-val value="success"/>
+            </focus-ctd-cond>
+        </focus-ctd-trigger>
+    </focus-ctd-decoration>
+    <defaultParentDetails parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername=""/>
+    <deactivates/>
+    <attrs-to-delete/>
+    <pool_comments>
+        <pool_comment key="8f06af3a-6c48-4fed-b3b7-0e1ab755f26b" value="{&quot;name&quot;:&quot;user_account_status&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="a142a26c-df64-429b-882b-d0894b210188" value="{&quot;name&quot;:&quot;upi_app_status&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="7d019635-ebe9-4957-8071-5676cec44727" value="{&quot;name&quot;:&quot;username&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="026fce22-8281-463f-b1d9-2731ba3c546e" value="{&quot;name&quot;:&quot;upi_id&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="cc449507-b56e-4504-a20f-a87ca7eb4b5b" value="{&quot;name&quot;:&quot;login_status&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="876b21a1-a1ab-4691-be53-f20e25cdf749" value="{&quot;name&quot;:&quot;order_tracking_details&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="9e454dfa-2a6b-4977-9380-31c5baf0db6c" value="{&quot;name&quot;:&quot;payment_status&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="4e50e594-0417-4759-bd3d-f2b1422185dc" value="{&quot;name&quot;:&quot;password&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="2009ebeb-1dc3-4c6c-9966-c34f37984d29" value="{&quot;name&quot;:&quot;order_status&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+    </pool_comments>
+    <db-dependencies/>
+    <focus-ctd-model-sync>
+        <focus-ctd-model-sync-mult/>
+        <focus-ctd-model-sync-na/>
+    </focus-ctd-model-sync>
+</focus-model>
