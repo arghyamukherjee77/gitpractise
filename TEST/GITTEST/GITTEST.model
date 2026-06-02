@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE focus-model [
+]>
+<!--Model Created from Reqode--><focus-model auxDataFilesFolder="" classifyAttributesEnabled="false" frea_ai_smart_comment="" inputOutput="false" manual="true">
+    <model-identification modelTag="@TEST @1.0 @TEST_TEST @GenAI_generated">
+        <model-identification-field name="Application Name" partOfTag="true" value="TEST"/>
+        <model-identification-field name="Application code version #" partOfTag="true" value="1.0"/>
+        <model-identification-field name="Application Function" partOfTag="true" value="TEST_TEST"/>
+        <model-identification-field name="Updated Reason" partOfTag="false" value="New Model"/>
+        <model-identification-field name="Created By" partOfTag="false" value="rgtmp_arghya.mukherjee"/>
+        <model-identification-field name="Created Date and Time" partOfTag="false" value="02 Jun 2026 10:30:59"/>
+        <model-identification-field name="Updated By" partOfTag="false" value="arghya.mukherjee"/>
+        <model-identification-field name="Updated Date and Time" partOfTag="false" value="02 Jun 2026 10:31:21"/>
+        <model-identification-field name="Application Sub Function" partOfTag="true" value="GenAI_generated"/>
+        <model-identification-field name="Test Stage" partOfTag="false" value=""/>
+        <model-identification-field name="Criticality" partOfTag="false" value=""/>
+        <model-identification-field name="Project" partOfTag="false" value=""/>
+        <model-identification-field name="Epic" partOfTag="false" value=""/>
+        <model-identification-field name="Feature" partOfTag="false" value=""/>
+        <model-identification-field name="User Story" partOfTag="false" value=""/>
+        <model-identification-field name="Git Comments" partOfTag="false" value=""/>
+        <model-identification-field name="Use attribute pool" partOfTag="false" value="true"/>
+    </model-identification>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="kontonummer" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="validkonto" neg-value="false" weight="1"/>
+        <value name="empty" neg-value="false" weight="1"/>
+        <value name="invalidkonto" neg-value="true" weight="1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_7"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="von_datum" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="firstdayofmonth" neg-value="false" weight="1"/>
+        <value name="pastdate" neg-value="false" weight="1"/>
+        <value name="futuredate" neg-value="true" weight="1"/>
+        <value name="greaterThan_bis_datum" neg-value="false" weight="1"/>
+        <value name="greaterthan_bis_datum" neg-value="false" weight="1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_2"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_6"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_7"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="bis_datum" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="currentdate" neg-value="false" weight="1"/>
+        <value name="pastdate" neg-value="false" weight="1"/>
+        <value name="futuredate" neg-value="true" weight="1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_7"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="kontotyp" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="girokonto" neg-value="false" weight="1"/>
+        <value name="sparkonto" neg-value="false" weight="1"/>
+        <value name="geschftskonto" neg-value="false" weight="1"/>
+        <value name="alle_konten" neg-value="false" weight="1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="exportformat" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="pdf" neg-value="false" weight="1"/>
+        <value name="csv" neg-value="false" weight="1"/>
+        <value name="excel" neg-value="false" weight="1"/>
+        <value name="mt940" neg-value="false" weight="1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="nur_gebuchte_umstze" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="selected" neg-value="false" weight="1"/>
+        <value name="notselected" neg-value="false" weight="1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="vorgemerkte_umstze_einschlieen" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="selected" neg-value="false" weight="1"/>
+        <value name="notselected" neg-value="false" weight="1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="saldoinformation_einschlieen" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="selected" neg-value="false" weight="1"/>
+        <value name="notselected" neg-value="false" weight="1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="exportieren_button" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="active" neg-value="false" weight="1"/>
+        <value name="inactive" neg-value="false" weight="1"/>
+        <requirement ID="kontoauszug-export-anforderungen-2_2"/>
+    </attribute>
+    <negative-combination>
+        <attr-value attribute="von_datum" value="futuredate"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="kontonummer" value="invalidkonto"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="bis_datum" value="futuredate"/>
+    </negative-combination>
+    <requirements-collection>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="kontoauszug-export-anforderungen-2_7" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="kontoauszug-export-anforderungen-2_6" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="kontoauszug-export-anforderungen-2_2" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="kontoauszug-export-anforderungen-2_1" Restrictions=""/>
+    </requirements-collection>
+    <coverage-reqs-sets defaultCoverageRequirementsSet="default">
+        <coverage-reqs-set description="" name="default">
+            <coverage-req>
+                <attribute name="kontonummer"/>
+                <attribute name="von_datum"/>
+                <attribute name="bis_datum"/>
+                <attribute name="kontotyp"/>
+                <attribute name="exportformat"/>
+                <attribute name="nur_gebuchte_umstze"/>
+                <attribute name="vorgemerkte_umstze_einschlieen"/>
+                <attribute name="saldoinformation_einschlieen"/>
+                <attribute name="exportieren_button"/>
+                <coverage-goal coverage-goal-val="1"/>
+            </coverage-req>
+        </coverage-reqs-set>
+    </coverage-reqs-sets>
+    <neg-coverage-reqs-sets defaultCoverageRequirementsSet="SingleNegativeCoverageRequirementsSet" isAutoNegCoverageRequirements="true">
+        <coverage-reqs-set description="" name="SingleNegativeCoverageRequirementsSet">
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="von_datum"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="kontonummer"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="bis_datum"/>
+                </negative-attribute-combination>
+            </coverage-req>
+        </coverage-reqs-set>
+    </neg-coverage-reqs-sets>
+    <focus-ctd-decoration decorationName="DefaultTestCaseNameDecoration" decorationType="testCaseName" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultFreeStyleDecoration" decorationType="freeStyle" isActiveDecoration="true"/>
+    <focus-ctd-decoration decorationName="DefaultCucumberDecoration" decorationType="cucumberDecoration" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultStructuredDecoration" decorationType="structuredDecoration" isActiveDecoration="false"/>
+    <defaultParentDetails parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername=""/>
+    <deactivates/>
+    <attrs-to-delete/>
+    <pool_comments/>
+    <db-dependencies/>
+    <focus-ctd-model-sync>
+        <focus-ctd-model-sync-mult/>
+        <focus-ctd-model-sync-na/>
+    </focus-ctd-model-sync>
+</focus-model>
