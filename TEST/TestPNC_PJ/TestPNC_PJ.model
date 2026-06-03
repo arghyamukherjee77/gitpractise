@@ -10,7 +10,7 @@
         <model-identification-field name="Created By" partOfTag="false" value="pjxx"/>
         <model-identification-field name="Created Date and Time" partOfTag="false" value="03 Jun 2026 05:44:14"/>
         <model-identification-field name="Updated By" partOfTag="false" value="pjxx"/>
-        <model-identification-field name="Updated Date and Time" partOfTag="false" value="03 Jun 2026 05:48:52"/>
+        <model-identification-field name="Updated Date and Time" partOfTag="false" value="03 Jun 2026 05:52:03"/>
         <model-identification-field name="Application Sub Function" partOfTag="true" value="PNCTest"/>
         <model-identification-field name="Test Stage" partOfTag="false" value=""/>
         <model-identification-field name="Criticality" partOfTag="false" value=""/>
@@ -18,7 +18,7 @@
         <model-identification-field name="Epic" partOfTag="false" value=""/>
         <model-identification-field name="Feature" partOfTag="false" value=""/>
         <model-identification-field name="User Story" partOfTag="false" value=""/>
-        <model-identification-field name="Git Comments" partOfTag="false" value=""/>
+        <model-identification-field name="Git Comments" partOfTag="false" value="PNC Test "/>
         <model-identification-field name="Use attribute pool" partOfTag="false" value="true"/>
     </model-identification>
     <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="Attribute1" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @v1 @TEST_TEST @PNCTest" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
@@ -34,8 +34,15 @@
         <value name="Val1" neg-value="true" weight="1"/>
         <value name="Val3" neg-value="false" weight="1"/>
     </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="testAttrib" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @v1 @TEST_TEST @PNCTest" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="name1" neg-value="true" weight="1"/>
+        <value name="name2" neg-value="false" weight="1"/>
+    </attribute>
     <dont-care>
         <attr-value attribute="Attribute3" value="Val2"/>
+    </dont-care>
+    <dont-care>
+        <attr-value attribute="testAttrib" value="name2"/>
     </dont-care>
     <negative-combination>
         <attr-value attribute="Attribute3" value="Val1"/>
@@ -43,12 +50,16 @@
     <negative-combination>
         <attr-value attribute="Attribute2" value="Val2"/>
     </negative-combination>
+    <negative-combination>
+        <attr-value attribute="testAttrib" value="name1"/>
+    </negative-combination>
     <coverage-reqs-sets defaultCoverageRequirementsSet="test">
         <coverage-reqs-set description="test" name="test">
             <coverage-req>
                 <attribute name="Attribute1"/>
                 <attribute name="Attribute2"/>
                 <attribute name="Attribute3"/>
+                <attribute name="testAttrib"/>
                 <coverage-goal coverage-goal-val="1"/>
             </coverage-req>
         </coverage-reqs-set>
@@ -67,6 +78,12 @@
                     <attribute name="Attribute2"/>
                 </negative-attribute-combination>
             </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="testAttrib"/>
+                </negative-attribute-combination>
+            </coverage-req>
         </coverage-reqs-set>
     </neg-coverage-reqs-sets>
     <focus-ctd-decoration decorationName="DefaultTestCaseNameDecoration" decorationType="testCaseName" isActiveDecoration="false"/>
@@ -76,7 +93,11 @@
     <defaultParentDetails parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername=""/>
     <deactivates/>
     <attrs-to-delete/>
-    <pool_comments/>
+    <pool_comments>
+        <pool_comment key="03f14a86-f209-4cda-bf98-5de0a89d3795" value="{&quot;name&quot;:&quot;Attribute3&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="d09cf0ba-e5d1-4050-90c0-35813a3ef3c2" value="{&quot;name&quot;:&quot;Attribute1&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+        <pool_comment key="74d0bc16-0a4e-4979-85e2-51c35bb4dedf" value="{&quot;name&quot;:&quot;Attribute2&quot;,&quot;version&quot;:&quot;1&quot;}"/>
+    </pool_comments>
     <db-dependencies/>
     <focus-ctd-model-sync>
         <focus-ctd-model-sync-mult/>
