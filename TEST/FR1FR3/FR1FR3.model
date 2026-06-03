@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE focus-model [
+]>
+<!--Model Created from Reqode--><focus-model auxDataFilesFolder="" classifyAttributesEnabled="false" frea_ai_smart_comment="" inputOutput="false" manual="true">
+    <model-identification modelTag="@TEST @1.0 @TEST_TEST @GenAI_generated">
+        <model-identification-field name="Application Name" partOfTag="true" value="TEST"/>
+        <model-identification-field name="Application code version #" partOfTag="true" value="1.0"/>
+        <model-identification-field name="Application Function" partOfTag="true" value="TEST_TEST"/>
+        <model-identification-field name="Updated Reason" partOfTag="false" value="New Model"/>
+        <model-identification-field name="Created By" partOfTag="false" value="rgtmp_arghya.mukherjee"/>
+        <model-identification-field name="Created Date and Time" partOfTag="false" value="03 Jun 2026 06:00:42"/>
+        <model-identification-field name="Updated By" partOfTag="false" value="arghya.mukherjee"/>
+        <model-identification-field name="Updated Date and Time" partOfTag="false" value="03 Jun 2026 06:02:24"/>
+        <model-identification-field name="Application Sub Function" partOfTag="true" value="GenAI_generated"/>
+        <model-identification-field name="Test Stage" partOfTag="false" value=""/>
+        <model-identification-field name="Criticality" partOfTag="false" value=""/>
+        <model-identification-field name="Project" partOfTag="false" value=""/>
+        <model-identification-field name="Epic" partOfTag="false" value=""/>
+        <model-identification-field name="Feature" partOfTag="false" value=""/>
+        <model-identification-field name="User Story" partOfTag="false" value=""/>
+        <model-identification-field name="Git Comments" partOfTag="false" value=""/>
+        <model-identification-field name="Use attribute pool" partOfTag="false" value="true"/>
+    </model-identification>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="outs_bal" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="greaterthan50000" neg-value="false" weight="1"/>
+        <value name="lessthanorequal50000" neg-value="true" weight="1"/>
+        <value name="lessthanorequal_50000" neg-value="false" weight="1"/>
+        <requirement ID="FR1_with_FR3_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="gl_centre_id" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="133211" neg-value="false" weight="1"/>
+        <value name="299320" neg-value="false" weight="1"/>
+        <value name="23322" neg-value="false" weight="1"/>
+        <value name="notapplicable" neg-value="false" weight="1"/>
+        <value name="notinlist" neg-value="true" weight="1"/>
+        <requirement ID="FR1_with_FR3_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="prod_code" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="99987" neg-value="false" weight="1"/>
+        <value name="565674" neg-value="false" weight="1"/>
+        <value name="44344" neg-value="false" weight="1"/>
+        <value name="notapplicable" neg-value="false" weight="1"/>
+        <value name="notinlist" neg-value="true" weight="1"/>
+        <requirement ID="FR1_with_FR3_2"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="bdf_flag" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="y" neg-value="false" weight="1"/>
+        <value name="n" neg-value="false" weight="1"/>
+        <requirement ID="FR1_with_FR3_1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="lob" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="retail" neg-value="false" weight="1"/>
+        <value name="not_retail" neg-value="true" weight="1"/>
+        <requirement ID="FR1_with_FR3_3"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="collateral_flag" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="y" neg-value="false" weight="1"/>
+        <value name="n" neg-value="true" weight="1"/>
+        <requirement ID="FR1_with_FR3_3"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="ltv" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="lessthanorequal0.75" neg-value="false" weight="1"/>
+        <value name="greaterthan0.75" neg-value="true" weight="1"/>
+        <value name="notapplicable" neg-value="false" weight="1"/>
+        <value name="greaterthan_0" neg-value="false" weight="1"/>
+        <requirement ID="FR1_with_FR3_3"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="asset_code" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="ret_secured" neg-value="false" weight="1"/>
+        <value name="ret_unsecured" neg-value="false" weight="1"/>
+        <requirement ID="FR1_with_FR3_3"/>
+    </attribute>
+    <restriction expression="!(outs_bal.equals(&quot;lessthanorequal_50000&quot;)) || gl_centre_id.equals(&quot;notapplicable&quot;)" group="" groupedExpression="!(outs_bal.equals(&quot;lessthanorequal_50000&quot;)) || gl_centre_id.equals(&quot;notapplicable&quot;)" iff="false" isActive="true" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_1"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="outs_bal" operation="Equals">
+                <focus-ctd-cond-val value="lessthanorequal_50000"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="gl_centre_id" operation="Equals">
+                <focus-ctd-cond-val value="notapplicable"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(gl_centre_id.equals(&quot;notinlist&quot;)) || bdf_flag.equals(&quot;n&quot;)" group="" groupedExpression="!(gl_centre_id.equals(&quot;notinlist&quot;)) || bdf_flag.equals(&quot;n&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_1"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="gl_centre_id" operation="Equals">
+                <focus-ctd-cond-val value="notinlist"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="bdf_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(gl_centre_id.equals(&quot;notapplicable&quot;)) || prod_code.equals(&quot;notapplicable&quot;)" group="" groupedExpression="!(gl_centre_id.equals(&quot;notapplicable&quot;)) || prod_code.equals(&quot;notapplicable&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_2"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="gl_centre_id" operation="Equals">
+                <focus-ctd-cond-val value="notapplicable"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="prod_code" operation="Equals">
+                <focus-ctd-cond-val value="notapplicable"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(prod_code.equals(&quot;notinlist&quot;)) || bdf_flag.equals(&quot;n&quot;)" group="" groupedExpression="!(prod_code.equals(&quot;notinlist&quot;)) || bdf_flag.equals(&quot;n&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_2"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="prod_code" operation="Equals">
+                <focus-ctd-cond-val value="notinlist"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="bdf_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(collateral_flag.equals(&quot;n&quot;)) || ltv.equals(&quot;notapplicable&quot;)" group="" groupedExpression="!(collateral_flag.equals(&quot;n&quot;)) || ltv.equals(&quot;notapplicable&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_3"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="collateral_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="ltv" operation="Equals">
+                <focus-ctd-cond-val value="notapplicable"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(collateral_flag.equals(&quot;n&quot;)) || asset_code.equals(&quot;ret_unsecured&quot;)" group="" groupedExpression="!(collateral_flag.equals(&quot;n&quot;)) || asset_code.equals(&quot;ret_unsecured&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_3"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="collateral_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="asset_code" operation="Equals">
+                <focus-ctd-cond-val value="ret_unsecured"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(ltv.equals(&quot;greaterthan_0&quot;)) || asset_code.equals(&quot;ret_unsecured&quot;)" group="" groupedExpression="!(ltv.equals(&quot;greaterthan_0&quot;)) || asset_code.equals(&quot;ret_unsecured&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_3"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="ltv" operation="Equals">
+                <focus-ctd-cond-val value="greaterthan_0"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="asset_code" operation="Equals">
+                <focus-ctd-cond-val value="ret_unsecured"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(outs_bal.equals(&quot;lessthanorequal_50000&quot;)) || bdf_flag.equals(&quot;n&quot;)" group="" groupedExpression="!(outs_bal.equals(&quot;lessthanorequal_50000&quot;)) || bdf_flag.equals(&quot;n&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_1"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="outs_bal" operation="Equals">
+                <focus-ctd-cond-val value="lessthanorequal_50000"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="bdf_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(outs_bal.equals(&quot;lessthanorequal_50000&quot;)) || gl_centre_id.equals(&quot;notapplicable&quot;)" group="" groupedExpression="!(outs_bal.equals(&quot;lessthanorequal_50000&quot;)) || gl_centre_id.equals(&quot;notapplicable&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_1"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="outs_bal" operation="Equals">
+                <focus-ctd-cond-val value="lessthanorequal_50000"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="gl_centre_id" operation="Equals">
+                <focus-ctd-cond-val value="notapplicable"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(gl_centre_id.equals(&quot;notinlist&quot;)) || bdf_flag.equals(&quot;n&quot;)" group="" groupedExpression="!(gl_centre_id.equals(&quot;notinlist&quot;)) || bdf_flag.equals(&quot;n&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_1"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="gl_centre_id" operation="Equals">
+                <focus-ctd-cond-val value="notinlist"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="bdf_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(gl_centre_id.equals(&quot;notapplicable&quot;)) || prod_code.equals(&quot;notapplicable&quot;)" group="" groupedExpression="!(gl_centre_id.equals(&quot;notapplicable&quot;)) || prod_code.equals(&quot;notapplicable&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_2"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="gl_centre_id" operation="Equals">
+                <focus-ctd-cond-val value="notapplicable"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="prod_code" operation="Equals">
+                <focus-ctd-cond-val value="notapplicable"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(prod_code.equals(&quot;notinlist&quot;)) || bdf_flag.equals(&quot;n&quot;)" group="" groupedExpression="!(prod_code.equals(&quot;notinlist&quot;)) || bdf_flag.equals(&quot;n&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_2"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="prod_code" operation="Equals">
+                <focus-ctd-cond-val value="notinlist"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="bdf_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(collateral_flag.equals(&quot;n&quot;)) || ltv.equals(&quot;notapplicable&quot;)" group="" groupedExpression="!(collateral_flag.equals(&quot;n&quot;)) || ltv.equals(&quot;notapplicable&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_3"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="collateral_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="ltv" operation="Equals">
+                <focus-ctd-cond-val value="notapplicable"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(collateral_flag.equals(&quot;n&quot;)) || asset_code.equals(&quot;ret_unsecured&quot;)" group="" groupedExpression="!(collateral_flag.equals(&quot;n&quot;)) || asset_code.equals(&quot;ret_unsecured&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_3"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="collateral_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="asset_code" operation="Equals">
+                <focus-ctd-cond-val value="ret_unsecured"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(ltv.equals(&quot;greaterthan_0&quot;)) || asset_code.equals(&quot;ret_unsecured&quot;)" group="" groupedExpression="!(ltv.equals(&quot;greaterthan_0&quot;)) || asset_code.equals(&quot;ret_unsecured&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_3"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="ltv" operation="Equals">
+                <focus-ctd-cond-val value="greaterthan_0"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="asset_code" operation="Equals">
+                <focus-ctd-cond-val value="ret_unsecured"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <restriction expression="!(outs_bal.equals(&quot;lessthanorequal_50000&quot;)) || bdf_flag.equals(&quot;n&quot;)" group="" groupedExpression="!(outs_bal.equals(&quot;lessthanorequal_50000&quot;)) || bdf_flag.equals(&quot;n&quot;)" iff="false" isActive="false" isAutoGenerated="false" name="" type="If-Then">
+        <requirement ID="FR1_with_FR3_1"/>
+        <if-expr is_or="true">
+            <focus-ctd-cond attribute="outs_bal" operation="Equals">
+                <focus-ctd-cond-val value="lessthanorequal_50000"/>
+            </focus-ctd-cond>
+        </if-expr>
+        <then-expr is_or="true">
+            <focus-ctd-cond attribute="bdf_flag" operation="Equals">
+                <focus-ctd-cond-val value="n"/>
+            </focus-ctd-cond>
+        </then-expr>
+    </restriction>
+    <negative-combination>
+        <attr-value attribute="collateral_flag" value="n"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="outs_bal" value="lessthanorequal50000"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="gl_centre_id" value="notinlist"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="prod_code" value="notinlist"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="ltv" value="greaterthan0.75"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="lob" value="not_retail"/>
+    </negative-combination>
+    <requirements-collection>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="FR1_with_FR3_3" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="FR1_with_FR3_1" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="FR1_with_FR3_2" Restrictions=""/>
+    </requirements-collection>
+    <coverage-reqs-sets defaultCoverageRequirementsSet="default">
+        <coverage-reqs-set description="" name="default">
+            <coverage-req>
+                <attribute name="outs_bal"/>
+                <attribute name="gl_centre_id"/>
+                <attribute name="prod_code"/>
+                <attribute name="bdf_flag"/>
+                <attribute name="lob"/>
+                <attribute name="collateral_flag"/>
+                <attribute name="ltv"/>
+                <attribute name="asset_code"/>
+                <attribute name="outs_bal"/>
+                <attribute name="gl_centre_id"/>
+                <attribute name="prod_code"/>
+                <attribute name="bdf_flag"/>
+                <attribute name="lob"/>
+                <attribute name="collateral_flag"/>
+                <attribute name="ltv"/>
+                <attribute name="asset_code"/>
+                <coverage-goal coverage-goal-val="1"/>
+            </coverage-req>
+        </coverage-reqs-set>
+    </coverage-reqs-sets>
+    <neg-coverage-reqs-sets defaultCoverageRequirementsSet="SingleNegativeCoverageRequirementsSet" isAutoNegCoverageRequirements="true">
+        <coverage-reqs-set description="" name="SingleNegativeCoverageRequirementsSet">
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="collateral_flag"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="outs_bal"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="gl_centre_id"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="prod_code"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="ltv"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="lob"/>
+                </negative-attribute-combination>
+            </coverage-req>
+        </coverage-reqs-set>
+    </neg-coverage-reqs-sets>
+    <focus-ctd-decoration decorationName="DefaultTestCaseNameDecoration" decorationType="testCaseName" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultFreeStyleDecoration" decorationType="freeStyle" isActiveDecoration="true"/>
+    <focus-ctd-decoration decorationName="DefaultCucumberDecoration" decorationType="cucumberDecoration" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultStructuredDecoration" decorationType="structuredDecoration" isActiveDecoration="false"/>
+    <defaultParentDetails parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername=""/>
+    <deactivates/>
+    <attrs-to-delete/>
+    <pool_comments/>
+    <db-dependencies/>
+    <focus-ctd-model-sync>
+        <focus-ctd-model-sync-mult/>
+        <focus-ctd-model-sync-na/>
+    </focus-ctd-model-sync>
+</focus-model>
