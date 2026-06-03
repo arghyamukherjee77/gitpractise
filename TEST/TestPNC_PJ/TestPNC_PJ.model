@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE focus-model [
+]>
+<!--PNC--><focus-model auxDataFilesFolder="" classifyAttributesEnabled="false" frea_ai_smart_comment="" inputOutput="false" manual="true">
+    <model-identification modelTag="@TEST @v1 @TEST_TEST @PNCTest">
+        <model-identification-field name="Application Name" partOfTag="true" value="TEST"/>
+        <model-identification-field name="Application code version #" partOfTag="true" value="v1"/>
+        <model-identification-field name="Application Function" partOfTag="true" value="TEST_TEST"/>
+        <model-identification-field name="Updated Reason" partOfTag="false" value="New Model"/>
+        <model-identification-field name="Created By" partOfTag="false" value="pjxx"/>
+        <model-identification-field name="Created Date and Time" partOfTag="false" value="03 Jun 2026 05:44:14"/>
+        <model-identification-field name="Updated By" partOfTag="false" value="pjxx"/>
+        <model-identification-field name="Updated Date and Time" partOfTag="false" value="03 Jun 2026 05:48:52"/>
+        <model-identification-field name="Application Sub Function" partOfTag="true" value="PNCTest"/>
+        <model-identification-field name="Test Stage" partOfTag="false" value=""/>
+        <model-identification-field name="Criticality" partOfTag="false" value=""/>
+        <model-identification-field name="Project" partOfTag="false" value=""/>
+        <model-identification-field name="Epic" partOfTag="false" value=""/>
+        <model-identification-field name="Feature" partOfTag="false" value=""/>
+        <model-identification-field name="User Story" partOfTag="false" value=""/>
+        <model-identification-field name="Git Comments" partOfTag="false" value=""/>
+        <model-identification-field name="Use attribute pool" partOfTag="false" value="true"/>
+    </model-identification>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="Attribute1" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @v1 @TEST_TEST @PNCTest" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="Val1" neg-value="false" weight="1"/>
+        <value name="Val2" neg-value="false" weight="1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="Attribute2" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @v1 @TEST_TEST @PNCTest" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="Val1" neg-value="false" weight="1"/>
+        <value name="Val2" neg-value="true" weight="1"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="Attribute3" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @v1 @TEST_TEST @PNCTest" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="Val2" neg-value="false" weight="1"/>
+        <value name="Val1" neg-value="true" weight="1"/>
+        <value name="Val3" neg-value="false" weight="1"/>
+    </attribute>
+    <dont-care>
+        <attr-value attribute="Attribute3" value="Val2"/>
+    </dont-care>
+    <negative-combination>
+        <attr-value attribute="Attribute3" value="Val1"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="Attribute2" value="Val2"/>
+    </negative-combination>
+    <coverage-reqs-sets defaultCoverageRequirementsSet="test">
+        <coverage-reqs-set description="test" name="test">
+            <coverage-req>
+                <attribute name="Attribute1"/>
+                <attribute name="Attribute2"/>
+                <attribute name="Attribute3"/>
+                <coverage-goal coverage-goal-val="1"/>
+            </coverage-req>
+        </coverage-reqs-set>
+    </coverage-reqs-sets>
+    <neg-coverage-reqs-sets defaultCoverageRequirementsSet="SingleNegativeCoverageRequirementsSet" isAutoNegCoverageRequirements="true">
+        <coverage-reqs-set description="" name="SingleNegativeCoverageRequirementsSet">
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="Attribute3"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="Attribute2"/>
+                </negative-attribute-combination>
+            </coverage-req>
+        </coverage-reqs-set>
+    </neg-coverage-reqs-sets>
+    <focus-ctd-decoration decorationName="DefaultTestCaseNameDecoration" decorationType="testCaseName" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultFreeStyleDecoration" decorationType="freeStyle" isActiveDecoration="true"/>
+    <focus-ctd-decoration decorationName="DefaultCucumberDecoration" decorationType="cucumberDecoration" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultStructuredDecoration" decorationType="structuredDecoration" isActiveDecoration="false"/>
+    <defaultParentDetails parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername=""/>
+    <deactivates/>
+    <attrs-to-delete/>
+    <pool_comments/>
+    <db-dependencies/>
+    <focus-ctd-model-sync>
+        <focus-ctd-model-sync-mult/>
+        <focus-ctd-model-sync-na/>
+    </focus-ctd-model-sync>
+</focus-model>
