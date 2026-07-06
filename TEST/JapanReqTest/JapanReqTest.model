@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE focus-model [
+]>
+<!--Model Created from Reqode--><focus-model auxDataFilesFolder="" classifyAttributesEnabled="false" frea_ai_smart_comment="" inputOutput="false" manual="true">
+    <model-identification modelTag="@TEST @1.0 @TEST_TEST @GenAI_generated">
+        <model-identification-field name="Application Name" partOfTag="true" value="TEST"/>
+        <model-identification-field name="Application code version #" partOfTag="true" value="1.0"/>
+        <model-identification-field name="Application Function" partOfTag="true" value="TEST_TEST"/>
+        <model-identification-field name="Updated Reason" partOfTag="false" value="New Model"/>
+        <model-identification-field name="Created By" partOfTag="false" value="rgtmp_arghya.mukherjee"/>
+        <model-identification-field name="Created Date and Time" partOfTag="false" value="03 Jul 2026 07:37:18"/>
+        <model-identification-field name="Updated By" partOfTag="false" value="arghya.mukherjee"/>
+        <model-identification-field name="Updated Date and Time" partOfTag="false" value="06 Jul 2026 09:18:09"/>
+        <model-identification-field name="Application Sub Function" partOfTag="true" value="GenAI_generated"/>
+        <model-identification-field name="Test Stage" partOfTag="false" value=""/>
+        <model-identification-field name="Criticality" partOfTag="false" value=""/>
+        <model-identification-field name="Project" partOfTag="false" value=""/>
+        <model-identification-field name="Epic" partOfTag="false" value=""/>
+        <model-identification-field name="Feature" partOfTag="false" value=""/>
+        <model-identification-field name="User Story" partOfTag="false" value=""/>
+        <model-identification-field name="Git Comments" partOfTag="false" value=""/>
+        <model-identification-field name="Use attribute pool" partOfTag="false" value="true"/>
+    </model-identification>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="ログインステータス" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="ログイン" neg-value="false" weight="1"/>
+        <value name="ログアウト" neg-value="false" weight="1"/>
+        <value name="無効な資格情報" neg-value="true" weight="1"/>
+        <requirement ID="requirements 12"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 2"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="ユーザーid" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="固有id" neg-value="false" weight="1"/>
+        <value name="重複id" neg-value="true" weight="1"/>
+        <requirement ID="requirements 11"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 5"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="パスワード" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="ハッシュ化されたパスワード" neg-value="false" weight="1"/>
+        <value name="無効なパスワード" neg-value="true" weight="1"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 15"/>
+        <requirement ID="requirements 5"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="パスワードの確認" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="有効なパスワード" neg-value="false" weight="1"/>
+        <value name="一致しません" neg-value="true" weight="1"/>
+        <requirement ID="requirements 11"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 8"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="ユーザー名" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="有効な名前" neg-value="false" weight="1"/>
+        <value name="無効な名前" neg-value="true" weight="1"/>
+        <requirement ID="requirements 11"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 4"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="電子メール" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="有効な電子メール" neg-value="false" weight="1"/>
+        <value name="無効な電子メール" neg-value="true" weight="1"/>
+        <requirement ID="requirements 11"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 4"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="電話番号" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="有効な電話番号" neg-value="false" weight="1"/>
+        <value name="無効な電話番号" neg-value="true" weight="1"/>
+        <requirement ID="requirements 11"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 4"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="性別" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="男性" neg-value="false" weight="1"/>
+        <value name="女性" neg-value="false" weight="1"/>
+        <requirement ID="requirements 4"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="誕生日" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="有効な日付" neg-value="false" weight="1"/>
+        <value name="無効な日付" neg-value="true" weight="1"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 4"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="郵便番号" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="有効な郵便番号" neg-value="false" weight="1"/>
+        <value name="無効な郵便番号" neg-value="true" weight="1"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 4"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="アドレス" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="有効なアドレス" neg-value="false" weight="1"/>
+        <value name="無効なアドレス" neg-value="true" weight="1"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 4"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="ユーザーリスト" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="ユーザーリストデータ" neg-value="false" weight="1"/>
+        <requirement ID="requirements 10"/>
+        <requirement ID="requirements 12"/>
+        <requirement ID="requirements 6"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="ユーザー詳細" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="ユーザー詳細データ" neg-value="false" weight="1"/>
+        <requirement ID="requirements 11"/>
+        <requirement ID="requirements 7"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="ユーザーデータの編集" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="有効なデータ" neg-value="false" weight="1"/>
+        <value name="無効なデータ" neg-value="true" weight="1"/>
+        <requirement ID="requirements 11"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 7"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="削除ユーザー確認" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="確認済み" neg-value="false" weight="1"/>
+        <requirement ID="requirements 9"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="登録データ" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="有効なデータ" neg-value="false" weight="1"/>
+        <value name="無効なデータ" neg-value="true" weight="1"/>
+        <requirement ID="requirements 11"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+        <requirement ID="requirements 8"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="セッションキー" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="ログインid" neg-value="false" weight="1"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+    </attribute>
+    <attribute attr_class="NONE" dependencies="false" description="" group="" iotype="NEITHER" name="loginstatus" parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="@TEST @1.0 @TEST_TEST @GenAI_generated" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername="" poolId="" revision="" type="STRING">
+        <value name="loggedin" neg-value="false" weight="1"/>
+        <value name="others" neg-value="false" weight="1"/>
+        <requirement ID="requirements 13"/>
+        <requirement ID="requirements 14"/>
+    </attribute>
+    <negative-combination>
+        <attr-value attribute="ログインステータス" value="無効な資格情報"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="ユーザー名" value="無効な名前"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="登録データ" value="無効なデータ"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="パスワードの確認" value="一致しません"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="郵便番号" value="無効な郵便番号"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="ユーザーデータの編集" value="無効なデータ"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="ユーザーid" value="重複id"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="電話番号" value="無効な電話番号"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="アドレス" value="無効なアドレス"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="電子メール" value="無効な電子メール"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="誕生日" value="無効な日付"/>
+    </negative-combination>
+    <negative-combination>
+        <attr-value attribute="パスワード" value="無効なパスワード"/>
+    </negative-combination>
+    <requirements-collection>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 15" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 14" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 13" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 12" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 11" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 10" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 9" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 8" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 2" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 5" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 4" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 7" Restrictions=""/>
+        <requirement-node Ambiguity="" Complexity="Simple" DocumentName="" Keywords="" Ranking="2147483647" RequirementDescription="" RequirementId="requirements 6" Restrictions=""/>
+    </requirements-collection>
+    <coverage-reqs-sets defaultCoverageRequirementsSet="default">
+        <coverage-reqs-set description="" name="default">
+            <coverage-req>
+                <attribute name="ログインステータス"/>
+                <attribute name="ユーザーid"/>
+                <attribute name="パスワード"/>
+                <attribute name="パスワードの確認"/>
+                <attribute name="ユーザー名"/>
+                <attribute name="電子メール"/>
+                <attribute name="電話番号"/>
+                <attribute name="性別"/>
+                <attribute name="誕生日"/>
+                <attribute name="郵便番号"/>
+                <attribute name="アドレス"/>
+                <attribute name="ユーザーリスト"/>
+                <attribute name="ユーザー詳細"/>
+                <attribute name="ユーザーデータの編集"/>
+                <attribute name="削除ユーザー確認"/>
+                <attribute name="登録データ"/>
+                <attribute name="セッションキー"/>
+                <attribute name="loginstatus"/>
+                <coverage-goal coverage-goal-val="1"/>
+            </coverage-req>
+        </coverage-reqs-set>
+    </coverage-reqs-sets>
+    <neg-coverage-reqs-sets defaultCoverageRequirementsSet="SingleNegativeCoverageRequirementsSet" isAutoNegCoverageRequirements="true">
+        <coverage-reqs-set description="" name="SingleNegativeCoverageRequirementsSet">
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="ログインステータス"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="ユーザー名"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="登録データ"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="パスワードの確認"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="郵便番号"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="ユーザーデータの編集"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="ユーザーid"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="電話番号"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="アドレス"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="電子メール"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="誕生日"/>
+                </negative-attribute-combination>
+            </coverage-req>
+            <coverage-req>
+                <coverage-goal coverage-goal-val="1"/>
+                <negative-attribute-combination>
+                    <attribute name="パスワード"/>
+                </negative-attribute-combination>
+            </coverage-req>
+        </coverage-reqs-set>
+    </neg-coverage-reqs-sets>
+    <focus-ctd-decoration decorationName="DefaultTestCaseNameDecoration" decorationType="testCaseName" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultFreeStyleDecoration" decorationType="freeStyle" isActiveDecoration="true"/>
+    <focus-ctd-decoration decorationName="DefaultCucumberDecoration" decorationType="cucumberDecoration" isActiveDecoration="false"/>
+    <focus-ctd-decoration decorationName="DefaultStructuredDecoration" decorationType="structuredDecoration" isActiveDecoration="false"/>
+    <defaultParentDetails parentDetailsApplicationName="" parentDetailsFunctionality="" parentDetailsModel="" parentDetailsModelTag="" parentDetailsPortfolio="" parentDetailsTenantId="" parentDetailsUsername=""/>
+    <deactivates/>
+    <attrs-to-delete/>
+    <pool_comments/>
+    <db-dependencies/>
+    <focus-ctd-model-sync>
+        <focus-ctd-model-sync-mult/>
+        <focus-ctd-model-sync-na/>
+    </focus-ctd-model-sync>
+</focus-model>
